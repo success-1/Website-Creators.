@@ -1,0 +1,107 @@
+/* 1. Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Responsive Typography */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* 3. Layout Wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 4. Images and Media */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Responsive Grid (Flexbox Example) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px; /* Controls stacking on small screens */
+}
+
+/* 6. Media Queries */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: blue;
+    margin-top: -7px;
+    text-decoration: underline;
+}
+.firstquarter{
+    background-color: #e4f9f5;
+}
+.secondquarter{
+    background-color: rgb(78, 78, 206);
+    color: #e4f9f5;
+    margin-top: -65px;
+}
+a{
+    color: #e4f9f5;
+    text-decoration: none;
+    font-size: larger;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+ul{
+    margin-top: -7px;
+    font-size: 30px;
+}
+h3{
+    margin-left: 10px;
+    font-size: 40px;
+}
+.thirdquarter{
+    background-color: #e4f9f5;
+    margin-top: -30px;
+}
+p{
+    margin-left: 10px;
+    color: blue;
+    font-size: larger;
+}
+.contactme{
+    color: blue;
+    text-decoration: underline;
+    margin-left: 1250px;
+}

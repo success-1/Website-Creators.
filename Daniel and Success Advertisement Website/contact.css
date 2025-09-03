@@ -1,0 +1,65 @@
+/* 1. Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Responsive Typography */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* 3. Layout Wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 4. Images and Media */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Responsive Grid (Flexbox Example) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px; /* Controls stacking on small screens */
+}
+
+/* 6. Media Queries */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+img{
+    height: 200px;
+    border-radius: 100px;
+}
